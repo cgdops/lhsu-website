@@ -99,14 +99,14 @@ h1, h2, h3, h4, h5, h6 {
     color: transparent;
 }
 
-.salsa-section {
-    padding: 9rem 1rem;
+.salsa-header {
+    padding: 4rem 1rem;
     background-color: #c38525;
     color: var(--white);
 }
 
-.hustle-section {
-    padding: 9rem 1rem;
+.hustle-header {
+    padding: 4rem 1rem;
     background-color: #00a3ff;
     color: var(--white);
 }
@@ -115,19 +115,64 @@ h1, h2, h3, h4, h5, h6 {
     text-align: right;
 }
 
-.transition-space {
-    display: block;
-    width: 100%;
-    height: 200px;
-    overflow: hidden;
-    position: relative;
-}
-
 .transition-space img {
     position: absolute;
     bottom: 0;
 }
 
+.separator {
+    position: relative;
+    height: 100px;
+    background: transparent;
+    overflow: hidden;
+}
+
+.separator::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 200%;
+    background-color: var(--black);
+    z-index: 1;
+}
+
+.separator--down::before {
+    top: -100%;
+    transform: rotate(-4deg);
+    transform-origin: left bottom;
+}
+
+.separator--up::before {
+    bottom: -100%;
+    transform: rotate(4deg);
+    transform-origin: right bottom;
+}
+
+.footer-content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    padding: 4rem 1rem 0 1rem;
+    background-color: var(--black);
+    color: var(--white);
+}
+
+.footer-content p {
+    grid-column: 1 / -1;
+}
+
+.footer-content a {
+    color: var(--white);
+}
+
+.footer-content a:hover {
+    text-decoration: underline;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
 
 
 @media only screen and (min-width: 768px) {
