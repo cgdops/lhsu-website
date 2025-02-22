@@ -13,17 +13,18 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&family=Syncopate:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
 </head>
 <body>
     <header id="site-navigation">
         <h1 class="text-logo">Latin Hustle & Salsa United</h1>
         <nav>
             <ul>
-                <li><a href="#" class="nav-links">Home</a></li>
-                <li><a href="#" class="nav-links">Salsa</a></li>
-                <li><a href="#" class="nav-links">Latin Hustle</a></li>
-                <li><a href="#" class="nav-links">About</a></li>
-                <li><a href="#" class="nav-links">Contact</a></li>
+                <li><a href="#" class="nav-links">Artists</a></li>
+                <li><a href="#" class="nav-links">Venue</a></li>
+                <li><a href="#" class="nav-links">Passes</a></li>
+                <li><a href="#" class="nav-links">Event</a></li>
+                <li><a href="#" class="nav-links">Competition</a></li>
             </ul>
         </nav>
     </header>
@@ -35,17 +36,32 @@
                 <p class="hero-description">Billy Fajardo, Raul Santiago & Nelson Flores bring you the best of both worlds at the all new <strong>Latin Hustle & Salsa United</strong>.</p>
             </div>
         </header>
-        <section id="salsa" aria-labelledby="salsa-heading">
-            <header class="salsa-header">
-                <h2 id="salsa-heading" class="hero-headline text-align-right">Enjoy the Sabor of the Best <span class="accent">Salsa</span> Artists</h2>
+        <section id="artists" aria-labelledby="artists-heading">
+            <header class="text-align-right">
+                <h2 id="artists-heading">Feel the Beat of <span class="accent">Salsa & Latin Hustle</span> Artists</h2>
+                <button class="button align-right"><span class="button-text">See Performing Artists</span> <i class="material-symbols-outlined">
+                    arrow_outward
+                </i></button>
             </header>
+            <!-- avoid spotlighting, any one group img code included here in case we need it later.
             <img src="./imgs/salsa-teams.jpg" alt="Professional Salsa dance teams">
+            -->
         </section>
-        <section id="hustle" aria-labelledby="hustle-heading">
-            <header class="hustle-header">
-                <h2 id="hustle-heading" class="hero-headline">Feel the Hits of the Best <span class="accent">Latin Hustle</span> Artists</h2>
+        <section id="events" aria-labelledby="events-heading">
+            <header>
+                <h2 id="events-heading">Jaw Dropping <span class="accent">Performances, Workshops & Competition</span></h2>
             </header>
-            <img src="./imgs/hustle-artists.jpg" alt="">
+            <button class="button"><span class="button-text">See Event Schedule</span> <i class="material-symbols-outlined">
+                arrow_outward
+            </i></button>
+        </section>
+        <section id="competition" aria-labelledby="competition-heading">
+            <header class="text-align-right">
+                <h2 id="competition-heading"><span class="accent">Compete</span> against the very best</h2>
+                <button class="button align-right"><span class="button-text">Register for Competition</span> <i class="material-symbols-outlined">
+                    arrow_outward
+                </i></button>
+            </header>
         </section>
     </main>
     <footer>
