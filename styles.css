@@ -276,9 +276,9 @@ main > section:nth-last-of-type(1) {
 }
 
 /* Passes Page Styles */
-.passes-grid {
+main > section.passes-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    grid-template-columns: 1fr;
     gap: 3rem;
     padding: 4rem 1rem;
 }
@@ -291,6 +291,7 @@ main > section:nth-last-of-type(1) {
     flex-direction: column;
     gap: 2rem;
     width: 100%;
+    height: 100%;
 }
 
 .pass-header {
@@ -349,7 +350,16 @@ section {
     margin: 0 auto;
 }
 
-@media only screen and (min-width: 768px) {
+@media screen and (min-width: 680px) {
+    main > section.passes-grid {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(30rem, 1fr));
+        gap: 3rem;
+        padding: 4rem 1rem;
+    }
+}
+
+@media only screen and (min-width: 1090px) {
     .hero-content {
         position: absolute;
         bottom: 0;
@@ -367,5 +377,12 @@ section {
     .pass-card:hover {
         transform: translateY(-5px);
         transition: transform 0.3s ease;
+    }
+
+    main > section.passes-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+        gap: 3rem;
+        padding: 4rem 1rem;
     }
 }
