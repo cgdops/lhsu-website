@@ -198,14 +198,14 @@ h2 {
     max-width: 120rem;
 }
 
-main > section:nth-child(even) {
+.home-page > section:nth-child(even) {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     text-align: left;
 }
 
-main > section:nth-child(odd) {
+.home-page > section:nth-child(odd) {
     display: flex;
     flex-direction: column;
     align-items: flex-end;
@@ -217,7 +217,7 @@ main > section:nth-last-of-type(1) {
     flex-direction: column;
     align-items: center;
     text-align: center;
-    background-color: var(--gold500);
+    background-color: rgb(240, 240, 240);
 }
 
 /* Inner page styles */
@@ -495,8 +495,8 @@ section {
 }
 
 .rule-category ul {
-    margin-left: 2rem;
-    list-style-type: disc;
+    margin-left: 0;
+    list-style-type: none;
 }
 
 .rule-category li {
