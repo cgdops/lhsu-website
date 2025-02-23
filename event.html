@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Schedule | Latin Hustle & Salsa United Congress</title>
+    <meta name="description" content="View the complete schedule for Latin Hustle & Salsa United Congress - workshops, performances, and social dancing.">
+    <meta property="og:title" content="Event Schedule | Latin Hustle & Salsa United Congress">
+    <meta property="og:description" content="Plan your perfect dance weekend with our detailed event schedule">
+    <meta property="og:type" content="website">
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&family=Syncopate:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+</head>
+<body>
+    <header id="site-navigation">
+        <h1 class="text-logo"><a href="./index.html">Latin Hustle & Salsa United</a></h1>
+        <nav>
+            <ul>
+                <li><a href="./artists.html" class="nav-links">Artists</a></li>
+                <li><a href="./venue.html" class="nav-links">Venue</a></li>
+                <li><a href="./passes.html" class="nav-links">Passes</a></li>
+                <li><a href="./event.html" class="nav-links">Event</a></li>
+                <li><a href="./competition.html" class="nav-links">Competition</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <header class="page-hero">
+            <h1>Event <span class="accent">Schedule</span></h1>
+            <p class="lead">Three days of non-stop dancing, learning, and entertainment.</p>
+        </header>
+
+        <section class="schedule-filters">
+            <div class="filter-buttons">
+                <button class="filter-btn active" data-filter="all">All Events</button>
+                <button class="filter-btn" data-filter="workshop">Workshops</button>
+                <button class="filter-btn" data-filter="performance">Performances</button>
+                <button class="filter-btn" data-filter="social">Social Dancing</button>
+                <button class="filter-btn" data-filter="competition">Competitions</button>
+            </div>
+        </section>
+
+        <section class="schedule-container">
+            <div class="day-tabs">
+                <button class="day-tab active" data-day="friday">Friday</button>
+                <button class="day-tab" data-day="saturday">Saturday</button>
+                <button class="day-tab" data-day="sunday">Sunday</button>
+            </div>
+
+            <div class="schedule-day active" id="friday">
+                <h2>Friday Schedule</h2>
+                <div class="timeline">
+                    <div class="event-card workshop">
+                        <time>2:00 PM</time>
+                        <div class="event-details">
+                            <h3>Latin Hustle Fundamentals</h3>
+                            <p class="instructor">with Billy Fajardo</p>
+                            <p class="location">Grand Ballroom A</p>
+                            <span class="event-type">Workshop</span>
+                        </div>
+                    </div>
+                    <!-- More event cards -->
+                </div>
+            </div>
+
+            <div class="schedule-day" id="saturday">
+                <h2>Saturday Schedule</h2>
+                <div class="timeline">
+                    <!-- Saturday events -->
+                </div>
+            </div>
+
+            <div class="schedule-day" id="sunday">
+                <h2>Sunday Schedule</h2>
+                <div class="timeline">
+                    <!-- Sunday events -->
+                </div>
+            </div>
+        </section>
+
+        <section class="download-schedule">
+            <h2>Take the Schedule With You</h2>
+            <a href="#" class="button">
+                <span class="button-text">Download PDF Schedule</span>
+                <i class="material-symbols-outlined">arrow_outward</i>
+            </a>
+        </section>
+    </main>
+    <footer>
+        <div class="footer-content">
+            <div class="contact-info">
+                <h3>Contact Us</h3>
+                <address>
+                    Latin Hustle & Salsa United<br>
+                    Los Angeles, CA<br>
+                    <a href="mailto:info@latinhustlesalsaunited.com">info@latinhustlesalsaunited.com</a>
+                </address>
+                <a href="./contact.html" class="button">Contact us <i class="material-symbols-outlined">
+                    arrow_outward
+                </i></a>
+            </div>
+            <nav aria-label="Footer navigation">
+                <ul>
+                    <li><a href="#privacy">Privacy Policy</a></li>
+                    <li><a href="#terms">Terms of Service</a></li>
+                </ul>
+            </nav>
+            <p>&copy; 2025 Latin Hustle & Salsa United. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
