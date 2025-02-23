@@ -420,6 +420,101 @@ section {
     padding: 0.5rem 0;
 }
 
+/* Competition Page Styles */
+.division-grid {
+    display: grid;
+    gap: 4rem;
+    margin-top: 4rem;
+}
+
+.division-card {
+    background: var(--white);
+    padding: 3rem;
+    border-radius: 0.4rem;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.division-card h3 {
+    font-size: 3.2rem;
+    margin-bottom: 2rem;
+    color: var(--navy700);
+}
+
+.division-card h4 {
+    font-size: 2rem;
+    margin: 2rem 0 1rem;
+    color: var(--navy500);
+}
+
+.division-categories ul {
+    margin-left: 2rem;
+    list-style-type: disc;
+}
+
+.division-categories li {
+    padding: 0.5rem 0;
+    color: var(--navy700);
+}
+
+.process-steps {
+    display: grid;
+    gap: 3rem;
+    margin-top: 4rem;
+}
+
+.step {
+    position: relative;
+    padding-left: 6rem;
+}
+
+.step-number {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 4rem;
+    height: 4rem;
+    background: var(--navy700);
+    color: var(--white);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.rules-grid {
+    display: grid;
+    gap: 4rem;
+    margin-top: 4rem;
+}
+
+.rule-category h3 {
+    margin-bottom: 2rem;
+    color: var(--navy700);
+}
+
+.rule-category ul {
+    margin-left: 2rem;
+    list-style-type: disc;
+}
+
+.rule-category li {
+    padding: 0.5rem 0;
+    color: var(--navy700);
+}
+
+@media screen and (min-width: 768px) {
+    .division-grid,
+    .rules-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .process-steps {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
 @media screen and (min-width: 768px) {
     .venue-overview {
         grid-template-columns: 1fr 1fr;
