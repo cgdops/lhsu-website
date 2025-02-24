@@ -28,7 +28,7 @@ a {
     text-decoration: none;
 }
 
-#site-navigation {
+.site-navigation {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
@@ -661,6 +661,12 @@ section {
     color: var(--navy700);
 }
 
+.contact-method i.material-symbols-outlined {
+    position: static; /* Override absolute positioning */
+    font-size: 2.4rem;
+    color: var(--navy700);
+}
+
 .contact-form-container {
     background: var(--white);
     padding: 3rem;
@@ -716,6 +722,12 @@ section {
 
 .submit-button:hover {
     background: var(--navy500);
+}
+
+.submit-button i.material-symbols-outlined {
+    position: static; /* Override absolute positioning */
+    font-size: 1.8rem;
+    vertical-align: middle;
 }
 
 .faq-section {
