@@ -1,6 +1,7 @@
 document.addEventListener('DOMContentLoaded', function () {
+    const repoPath = '/lhsu-website';
     // load header
-    fetch('../components/header.html')
+    fetch(`${repoPath}/components/header.html`)
         .then(response => response.text())
         .then(data => {
             document.getElementById('header-placeholder').
@@ -10,7 +11,7 @@ document.addEventListener('DOMContentLoaded', function () {
             ('Error loading header:', error));
 
     // load footer
-    fetch('../components/footer.html')
+    fetch(`${repoPath}/components/footer.html`)
        .then(response => response.text())
        .then(data => {
             document.getElementById('footer-placeholder').
