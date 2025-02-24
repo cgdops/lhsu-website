@@ -508,6 +508,8 @@ section {
 /* Event Schedule Page Styles */
 .schedule-filters {
     margin: 2rem 0;
+    overflow-x: hidden;
+    width: 100%;
 }
 
 .filter-buttons {
@@ -515,6 +517,11 @@ section {
     flex-wrap: wrap;
     gap: 1rem;
     margin-bottom: 3rem;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    padding-bottom: 1rem;
+    margin: -1rem 0;
+    padding: 1rem 0;
 }
 
 .filter-btn {
@@ -536,6 +543,12 @@ section {
     display: flex;
     gap: 1rem;
     margin-bottom: 4rem;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    padding-bottom: 1rem;
+    white-space: nowrap;
+    margin: -1rem 0;
+    padding: 1rem 0;
 }
 
 .day-tab {
@@ -583,6 +596,8 @@ section {
     background: var(--white);
     border-radius: 0.4rem;
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    max-width: 100%;
+    word-wrap: break-word;
 }
 
 .event-card::before {
@@ -605,9 +620,14 @@ section {
     display: block;
 }
 
+.event-details {
+    max-width: 100%;
+}
+
 .event-details h3 {
     font-size: 2rem;
     margin-bottom: 0.5rem;
+    word-wrap: break-word;
 }
 
 .instructor,
@@ -840,6 +860,16 @@ section {
     color: var(--navy700);
 }
 
+/* Base mobile container fixes */
+.schedule-container {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+.timeline {
+    max-width: 100%;
+    padding-right: 1rem;
+}
 @media screen and (min-width: 768px) {
     .bootcamp-grid {
         grid-template-columns: repeat(2, 1fr);
