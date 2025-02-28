@@ -247,7 +247,7 @@ main > section:nth-last-of-type(1) {
 .artist-grid,
 .team-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(28rem, 1fr));
+    grid-template-columns: repeat(1, minmax(28rem, 1fr));
     gap: 3rem;
     padding: 2rem 0;
 }
@@ -258,21 +258,38 @@ main > section:nth-last-of-type(1) {
     border-radius: 0.4rem;
     overflow: hidden;
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    position: relative;
+    text-align: left;
+    color: white;
 }
 
 .artist-card img {
     aspect-ratio: 1;
     object-fit: cover;
+    width: 100%;
 }
 
 .artist-info {
-    padding: 2rem;
+    padding: 3rem;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+    display: flex;
+    flex-direction: column-reverse;
 }
 
 .artist-specialty {
-    color: var(--navy500);
-    font-weight: 600;
+    color: var(--white);
+    font-weight: 200;
     margin: 0.5rem 0;
+    font-size: 2rem;
+}
+
+.artist-name {
+    font-family: 'Syncopate', sans-serif;
+    font-size: 4.2rem;
 }
 
 /* CTA Section */
@@ -877,6 +894,11 @@ section {
 
     .schedule-grid {
         grid-template-columns: repeat(2, 1fr);
+    }
+
+    .artist-grid,
+    .team-grid {
+        grid-template-columns: repeat(auto-fit, minmax(28rem, 1fr));
     }
 }
 
