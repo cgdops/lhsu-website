@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', function () {
-    const repoPath = '/lhsu-website';
+    const repoPath = '';
     // load header
     fetch(`${repoPath}/components/header.html`)
         .then(response => response.text())
