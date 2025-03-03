@@ -143,7 +143,7 @@ h3 {
     display: inline-flex;
     align-items: top;
     position: relative;
-    justify-content: space-between;
+    justify-content: center;
     background-color: var(--white);
     color: var(--navy700);
     padding: 0.5rem 0rem;
@@ -292,13 +292,14 @@ main > section:nth-last-of-type(1) {
 
 /* Card Styles */
 .artist-card {
-    background: var(--white);
+    background: rgb(240, 240, 240);
     border-radius: 0.4rem;
     overflow: hidden;
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
     position: relative;
     text-align: left;
     color: white;
+    aspect-ratio: 1 / 1;
 }
 
 .artist-card img {
