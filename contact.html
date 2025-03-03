@@ -13,6 +13,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&family=Syncopate:wght@400;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <script src="https://www.google.com/recaptcha/enterprise.js" async defer></script>
 </head>
 <body>
     <header id="header-placeholder"></header>
@@ -52,7 +53,7 @@
 
             <div class="contact-form-container">
                 <h2>Send us a Message</h2>
-                <form class="contact-form" action="#" method="POST">
+                <form class="contact-form" action="https://forms.un-static.com/forms/9ab2c144c75e753455bef4a3647e8128711c3588" method="POST">
                     <div class="form-group">
                         <label for="name">Your Name</label>
                         <input type="text" id="name" name="name" required>
@@ -78,6 +79,8 @@
                         <label for="message">Your Message</label>
                         <textarea id="message" name="message" rows="5" required></textarea>
                     </div>
+
+                    <div class="g-recaptcha" data-sitekey="6LeqkOcqAAAAAFqSfPgBan7mY0eLHBVMSuNjrjaG"></div>
 
                     <button type="submit" class="submit-button">
                         Send Message
