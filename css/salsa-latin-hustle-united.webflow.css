@@ -1319,6 +1319,13 @@
   overflow: hidden;
 }
 
+.utility-text-align-center {
+  text-align: center;
+  flex-flow: column;
+  align-items: center;
+  display: flex;
+}
+
 .utility-text-align-right {
   text-align: right;
 }
