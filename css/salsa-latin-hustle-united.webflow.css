@@ -1531,6 +1531,10 @@
   object-position: 50% 0%;
 }
 
+.cover-image.card-image.top-align {
+  object-position: 50% 0%;
+}
+
 .utility-z-index-1 {
   z-index: 1;
 }
